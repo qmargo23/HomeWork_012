@@ -1,7 +1,9 @@
+import java.util.Objects;
+
 public class Book {
     /* 1 - Создайте класс Book, который содержит в себе данные о названии,
-     авторе и годе публикации книги. Типы полей должны быть String,
-      Author (его мы создадим в п. 2) и int.*/
+             авторе и годе публикации книги. Типы полей должны быть String,
+              Author (его мы создадим в п. 2) и int.*/
     private String bookName;
     private Author author;
     private int year;

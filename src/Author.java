@@ -1,4 +1,5 @@
 public class Author {
+
     /* 2 - Создайте класс Author, который содержит в себе
      данные об имени и фамилии автора.*/
     private final String name;
@@ -11,14 +12,14 @@ public class Author {
     }
 
     /* 4 Создайте геттеры для всех полей автора и всех полей книги.*/
-    public String getAuthorName() {
-        return this.name;
+    public String getName() {
+        return name;
     }
-    public String getAuthorLastName() {
-        return this.lastName;
+    public String getLastName() {
+        return lastName;
     }
     // метод получения Автора Книги...
-    public String getWriter() {
-        return (getAuthorLastName() + "  " + getAuthorName());
+    public String toString() {
+        return getLastName() + "  " + getName();
     }
 }

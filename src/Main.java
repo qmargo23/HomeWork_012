@@ -4,6 +4,7 @@ public class Main {
      Author (его мы создадим в п. 2) и int.*/
     public static void main(String[] args) {
         System.out.println("Библиотечный справочник");
+        System.out.println("=========================");
         /* 6 В методе main создайте несколько объектов «Книга» (достаточно двух)
         и несколько объектов «Автор» (достаточно тоже двух) и инициализируйте их.
         Учтите, что авторы являются обязательными и книги не могут создаваться
@@ -20,14 +21,18 @@ public class Main {
         Author pushkin = new Author("Александр", "Пушкин");
         Author tolstoy = new Author("Лев", "Толстой");
 
-        Book pushkin_01 = new Book("Руслан и Людмила","pushkin.getAuthorName()",1918);// как заполнить?
-//        Book tolstoy_01 = new Book("Отрочество",, 1852);
+        /*Касательно того, как правильно вызвать конструктор при создании книги:
+        на место соответствующего автору аргумента нужно поставить название переменной,
+        в которой хранится автор (без кавычек – просто название переменной):
+         */
 
-        System.out.println("Автор книги " + pushkin.getWriter());
-        System.out.println("Название книги - " + pushkin_01.getBookName());
-        System.out.println("Год выпуска книги - " + pushkin_01.getBookYear());
+       Book ruslanAndLyudmila = new Book("Руслан и Людмила",pushkin,1918);// как заполнить?
+        Book otrochestvo = new Book("Отрочество",tolstoy , 1852);
+       System.out.println("Автор книги " + pushkin);
+       System.out.println("Название книги - " + ruslanAndLyudmila.getBookName());
+       System.out.println("Год выпуска книги - " + ruslanAndLyudmila.getBookYear());
         /*7 В том же методе main измените год публикации одной из книг с помощью сеттера.*/
-        pushkin_01.setBookYear(1818);
-        System.out.println("изменили Год выпуска книги на - " + pushkin_01.getBookYear());
+       ruslanAndLyudmila.setBookYear(1818);
+       System.out.println("изменили Год выпуска книги на - " + ruslanAndLyudmila.getBookYear());
     }
 }
