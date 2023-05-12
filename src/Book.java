@@ -14,10 +14,10 @@ public class Book {
         this.year = year;
     }
     /* 4 Создайте геттеры для всех полей автора и всех полей книги.*/
-    public String getBookName() {
+    public String getName() {
         return this.bookName;
     }
-    public int getBookYear() {
+    public int getYear() {
         return this.year;
     }
     public Author getAuthor() {
@@ -25,7 +25,7 @@ public class Book {
     }
 
     /* 5 Создайте сеттер для поля «Год публикации» у книги.*/
-    public void setBookYear(int year) {
+    public void setYear(int year) {
         this.year = year;
     }
 }

@@ -29,10 +29,10 @@ public class Main {
        Book ruslanAndLyudmila = new Book("Руслан и Людмила",pushkin,1918);// как заполнить?
         Book otrochestvo = new Book("Отрочество",tolstoy , 1852);
        System.out.println("Автор книги " + pushkin);
-       System.out.println("Название книги - " + ruslanAndLyudmila.getBookName());
-       System.out.println("Год выпуска книги - " + ruslanAndLyudmila.getBookYear());
+       System.out.println("Название книги - " + ruslanAndLyudmila.getName());
+       System.out.println("Год выпуска книги - " + ruslanAndLyudmila.getYear());
         /*7 В том же методе main измените год публикации одной из книг с помощью сеттера.*/
-       ruslanAndLyudmila.setBookYear(1818);
-       System.out.println("изменили Год выпуска книги на - " + ruslanAndLyudmila.getBookYear());
+       ruslanAndLyudmila.setYear(1818);
+       System.out.println("изменили Год выпуска книги на - " + ruslanAndLyudmila.getYear());
     }
 }
